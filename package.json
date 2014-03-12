@@ -1,7 +1,7 @@
 {
   "name": "gl-modules-viz",
   "version": "0.0.0",
-  "description": "",
+  "description": "Just experimenting with making a force-directed graph of the core modules available in the [modules.gl](http://modules.gl) ecosystem, potentially to include on the home page.",
   "scripts": {
     "graph": "DEBUG=npm-flat-graph node lib/build",
     "preinstall": "test -f generated/modules.json || npm run graph",
@@ -18,6 +18,21 @@
     "browserify": "^3.32.1",
     "beefy": "^1.1.0"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Hugh Kennedy <hughskennedy@gmail.com> (http://hughskennedy.com/)",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hughsk/gl-modules-viz.git"
+  },
+  "keywords": [
+    "gl-modules",
+    "visualisation",
+    "network",
+    "graph"
+  ],
+  "bugs": {
+    "url": "https://github.com/hughsk/gl-modules-viz/issues"
+  },
+  "homepage": "https://github.com/hughsk/gl-modules-viz"
 }
