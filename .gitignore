@@ -2,5 +2,3 @@ node_modules
 .DS_Store
 npm-debug.log
 generated/modules.json
-bundle.js
-index.html
