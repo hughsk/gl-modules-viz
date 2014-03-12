@@ -1,0 +1,23 @@
+{
+  "name": "gl-modules-viz",
+  "version": "0.0.0",
+  "description": "",
+  "scripts": {
+    "graph": "DEBUG=npm-flat-graph node lib/build",
+    "preinstall": "test -f generated/modules.json || npm run graph",
+    "start": "npm run preinstall && beefy demo.js:bundle.js --live",
+    "prepublish": "npm run graph && browserify demo.js -o bundle.js"
+  },
+  "dependencies": {
+    "d3": "^3.4.3",
+    "pluck": "0.0.4",
+    "debounce": "0.0.3",
+    "npm-flat-graph": "0.0.1"
+  },
+  "devDependencies": {
+    "browserify": "^3.32.1",
+    "beefy": "^1.1.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
